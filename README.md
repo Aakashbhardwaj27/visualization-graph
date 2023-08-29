@@ -36,6 +36,7 @@ Cons:
 Steeper learning curve due to its flexibility and complexity.
 Requires more effort for handling interactions compared to some dedicated graph libraries.
 Might need additional work for responsiveness and mobile-friendly designs.
+
 Reasoning: D3.js provides a lot of flexibility for creating custom graph visualizations. It can cover all the scenarios you've mentioned, but it might require more development effort and time due to its low-level nature and complex learning curve.
 
 ### Library 2: [Cytoscape.js](https://www.npmjs.com/package/cytoscape)
@@ -51,6 +52,7 @@ Cons:
 
 Customization might be limited compared to something like D3.js, but it's often sufficient for many use-cases.
 Learning the API and integrating it with React might still require some effort.
+
 Reasoning: Cytoscape.js is a more specialized library for graph visualization and might offer a more out-of-the-box experience compared to D3.js for your specific use-cases.
 
 ### Library 3: [Vis.js](https://github.com/visjs)
@@ -66,4 +68,5 @@ Cons:
 
 May not handle very large graphs as efficiently as some other libraries.
 Customization might be limited compared to more versatile libraries.
+
 Reasoning: Vis.js could be a good balance between ease of use and functionality, especially if your graphs are not extremely large and complex.
