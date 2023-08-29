@@ -1,8 +1,8 @@
 # Getting Started with visualization-graph Example 
-created by Aakash Bhardwaj
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This project was created by [Aakash Bhardwaj](https://github.com/Aakashbhardwaj27).
 
 ## Available Scripts
 
