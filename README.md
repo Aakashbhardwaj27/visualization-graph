@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs the necessary packages.
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -14,57 +18,50 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Analysis of various library for graph visualization
 
-### `npm run build`
+### Library 1: [D3.js](https://www.npmjs.com/package/d3)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pros:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Highly customizable and versatile for complex visualizations.
+Supports a wide range of graph types and interactions.
+Strong community and documentation.
+Can be integrated with React using wrappers like react-d3-library or react-faux-dom.
+Cons:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Steeper learning curve due to its flexibility and complexity.
+Requires more effort for handling interactions compared to some dedicated graph libraries.
+Might need additional work for responsiveness and mobile-friendly designs.
+Reasoning: D3.js provides a lot of flexibility for creating custom graph visualizations. It can cover all the scenarios you've mentioned, but it might require more development effort and time due to its low-level nature and complex learning curve.
 
-### `npm run eject`
+### Library 2: [Cytoscape.js](https://www.npmjs.com/package/cytoscape)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Pros:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Designed specifically for graph visualization, making it easier to work with for these scenarios.
+Good performance even for large graphs.
+Supports various layouts and styles.
+Has built-in support for interactions like collapsing, expanding nodes, filtering, and zooming.
+Can be integrated with React using the cytoscape-react wrapper.
+Cons:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Customization might be limited compared to something like D3.js, but it's often sufficient for many use-cases.
+Learning the API and integrating it with React might still require some effort.
+Reasoning: Cytoscape.js is a more specialized library for graph visualization and might offer a more out-of-the-box experience compared to D3.js for your specific use-cases.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Library 3: [Vis.js](https://github.com/visjs)
 
-## Learn More
+Pros:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Simplified API for graph visualization.
+Good performance for medium-sized graphs.
+Supports various layouts, interactions, and customization options.
+Provides network events for handling interactions.
+Has a React wrapper called react-vis-network.
+Cons:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+May not handle very large graphs as efficiently as some other libraries.
+Customization might be limited compared to more versatile libraries.
+Reasoning: Vis.js could be a good balance between ease of use and functionality, especially if your graphs are not extremely large and complex.
